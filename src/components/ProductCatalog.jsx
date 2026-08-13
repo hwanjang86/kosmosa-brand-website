@@ -25,17 +25,6 @@ const PRODUCTS = [
     price: '$29.99'
   },
   {
-    id: 'padfolio-op-a4',
-    name: 'Open A4 Padfolio',
-    description: 'Quick access open-style A4 padfolio with a sleek, minimalist footprint.',
-    images: {
-      black: '/Product/Padfolio/KOSMOSA_OP_A4_Black.png',
-      brown: '/Product/Padfolio/KOSMOSA_OP_A4_Brown.png',
-    },
-    colors: ['black', 'brown'],
-    price: '$34.99'
-  },
-  {
     id: 'deskmat',
     name: 'Premium Felt Desk Mat',
     description: 'Ultra-soft dark grey wool felt desk mat providing a warm, anti-slip surface for your setup.',
