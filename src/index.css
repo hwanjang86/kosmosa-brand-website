@@ -1,0 +1,67 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f7f7;
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --text-inverse: #ffffff;
+  
+  --chrome-bg: rgba(255, 255, 255, 0.85);
+  --chrome-border: rgba(0, 0, 0, 0.08);
+  
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-optical-sizing: auto;
+}
+
+/* Typography based on Minimalist Design */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+p {
+  letter-spacing: 0;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: var(--chrome-bg);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--chrome-border);
+}
+
+.glass-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--chrome-border);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hidden scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
