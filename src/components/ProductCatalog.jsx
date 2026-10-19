@@ -12,7 +12,7 @@ const PRODUCTS = [
       brown: '/Product/Padfolio/KOSMOSA_CL_A4_Brown_Main.png',
     },
     colors: ['black', 'brown'],
-    price: '$39.99'
+    price: '$38.9'
   },
   {
     id: 'padfolio-cl-mini',
@@ -24,7 +24,7 @@ const PRODUCTS = [
       navy: '/Product/Padfolio/KOSMOSA_CL_Mini_Navy_Main.png',
     },
     colors: ['black', 'navy'],
-    price: '$29.99'
+    price: '$26.9'
   },
   {
     id: 'deskmat',
