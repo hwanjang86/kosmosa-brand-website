@@ -47,7 +47,7 @@ export default function Header() {
       <motion.a 
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        href="https://amazon.com"
+        href="https://www.amazon.com/s?k=KOSMOSA&ref=bl_dp_s_web_0"
         target="_blank"
         style={{
           display: 'flex',

@@ -5,6 +5,7 @@ const PRODUCTS = [
   {
     id: 'padfolio-cl-a4',
     name: 'Classic A4 Padfolio',
+    amazonUrl: 'https://www.amazon.com/dp/B0HFRR9JNK?th=1',
     description: 'Premium leather classic padfolio designed for A4 documents, featuring refined stitching and functional pockets.',
     images: {
       black: '/Product/Padfolio/KOSMOSA_CL_A4_Black_Main.png',
@@ -16,6 +17,7 @@ const PRODUCTS = [
   {
     id: 'padfolio-cl-mini',
     name: 'Classic Mini Padfolio',
+    amazonUrl: 'https://www.amazon.com/dp/B0HFRSDDGK?th=1',
     description: 'Compact and elegant leather padfolio for on-the-go professionals.',
     images: {
       black: '/Product/Padfolio/KOSMOSA_CL_Mini_Black_Main.png',
@@ -135,7 +137,7 @@ export default function ProductCatalog() {
             <motion.a 
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="https://amazon.com"
+              href={activeProduct.amazonUrl || 'https://amazon.com'}
               target="_blank"
               style={{
                 background: '#111',
