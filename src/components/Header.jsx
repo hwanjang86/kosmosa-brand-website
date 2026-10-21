@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag } from 'lucide-react';
+import { Instagram, ShoppingBag } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Header() {
@@ -44,6 +44,26 @@ export default function Header() {
         <a href="#collection" style={{ color: 'var(--text-primary)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 500 }}>Collection</a>
       </nav>
 
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <a
+          href="https://www.instagram.com/kosmosa.official/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="KOSMOSA on Instagram (opens in a new tab)"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '44px',
+            height: '44px',
+            flexShrink: 0,
+            color: 'var(--text-primary)',
+            borderRadius: '50%',
+            textDecoration: 'none'
+          }}
+        >
+          <Instagram size={22} aria-hidden="true" />
+        </a>
       <motion.a 
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -65,6 +85,7 @@ export default function Header() {
         <ShoppingBag size={18} />
         <span>Shop Amazon</span>
       </motion.a>
+      </div>
     </motion.header>
   );
 }
