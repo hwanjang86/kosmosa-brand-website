@@ -50,8 +50,8 @@ export default function Footer() {
         }}>
           <p>&copy; {new Date().getFullYear()} timbee Co., Ltd. All rights reserved. | Proudly based in South Korea.</p>
           <div style={{ display: 'flex', gap: '30px' }}>
-            <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</a>
-            <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Terms of Service</a>
+            <a href="/privacy.html" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</a>
+            <a href="/terms.html" style={{ color: 'inherit', textDecoration: 'none' }}>Terms of Service</a>
           </div>
         </div>
       </div>

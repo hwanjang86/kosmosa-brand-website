@@ -1,0 +1,122 @@
+.legal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  min-height: 80px;
+  padding: 20px 5vw;
+  border-bottom: 1px solid var(--chrome-border);
+}
+
+.legal-brand {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.legal-content {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 80px 24px 96px;
+  overflow-wrap: anywhere;
+}
+
+.legal-eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.legal-content h1 {
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+}
+
+.legal-updated {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.legal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  margin: 32px 0 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--chrome-border);
+}
+
+.legal-page a {
+  color: var(--text-primary);
+  text-underline-offset: 4px;
+}
+
+.legal-nav a[aria-current="page"] {
+  font-weight: 600;
+}
+
+.legal-content section {
+  margin-top: 36px;
+}
+
+.legal-content h2 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.legal-content article p + p,
+.legal-content article ul {
+  margin-top: 16px;
+}
+
+.legal-content ul {
+  padding-left: 24px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.legal-content li + li {
+  margin-top: 8px;
+}
+
+.legal-content address {
+  font-style: normal;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+.legal-page a:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 5px;
+}
+
+.legal-skip {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  transform: translateY(-200%);
+  padding: 12px;
+  background: var(--bg-primary);
+}
+
+.legal-skip:focus {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .legal-content {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+}
